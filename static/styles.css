@@ -1,0 +1,31 @@
+body {
+    background-color: #F2F2F2;
+}
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    min-height: calc(100vh - 60px);
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(173,38,164,0.67);
+}
+
+.error {
+    color: rgba(173,30,24,0.88);
+}
+
+.orders {
+    margin: 20px 0;
+}
