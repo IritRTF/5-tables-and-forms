@@ -29,3 +29,17 @@ h1 {
 .orders {
     margin: 20px 0;
 }
+
+.main-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+label span {
+    display: block;
+}
