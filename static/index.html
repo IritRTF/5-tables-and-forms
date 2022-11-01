@@ -9,7 +9,68 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post" class="myForm">
+        <label>
+            выберите тип животного:
+            <select name="petType" id="" class="select">
+                <option value="cat">кот</option>
+                <option value="dog">собака</option>
+                <option value="tiger">тигр</option>
+            </select>
+        </label>
+        <label>
+            выберите пол:
+            <select name="gender" id="" class="select">
+                <option value="boy">мальчик</option>
+                <option value="girl">девочка</option>
+                <option value="none">неважно</option>
+            </select>
+        </label>
+        <label>
+            выберите цвет глаз:
+            <input type="color" name="eyeColor" class="selectColor">
+        </label>
+        <label>
+            Введите длину хвоста:
+            <input type="number" name="tailLength" placeholder="Введите длину...">
+        </label>
+        <label>
+            Введите имя питомца:
+            <input type="text" name="name" placeholder="Введите имя питомца...">
+        </label>
+        <label>
+            Введите вашу дату рождения:
+            <input type="date" name="dateOfBirth">
+        </label>
+        <label>
+            Введите адрес электронной почты:
+            <input type="email" name="email" placeholder="Введите емаил...">
+        </label>
+        <label>
+            Введите номер телефона:
+            <input type="tel" name="phone">
+        </label>
+
+        
+        <input type="radio" name="rules" value="true" class="rules">
+
+
+        <button type="reset" class="btnReset">стереть входные данные </button>
+
+
+
+        <button type="submit">
+            отправить
+        </button>
+    </form>
+    <!--    gender
+    eyeColor
+    tailLength
+    name
+    dateOfBirth
+    email
+    phone
+    rules-->
 
 </main>
 </body>

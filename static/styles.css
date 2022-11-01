@@ -22,10 +22,54 @@ h1 {
     color: rgba(173,38,164,0.67);
 }
 
+.myForm{
+    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+
+}
+
+.myForm label{
+    text-align: left;
+    display: block;
+}
+
+label input{
+    display: block;
+    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 80%;
+
+    margin-bottom: 20px;
+}
+
+.myForm button{
+    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .error {
     color: rgba(173,30,24,0.88);
 }
 
 .orders {
     margin: 20px 0;
+}
+
+.select{
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.selectColor{
+    border-radius: 0%;
+    padding: 0;
+    width: 25px;
+}
+
+.rules{
+    display: none;
+}
+
+
+.btnReset{
+    display: block;
 }
