@@ -8,9 +8,70 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
     <!--Форму размещай тут-->
-
+    <!-- В запросе нет обязательных полей:
+    !!!Задача предполагает, что каждое поле уникального типа или сделано уникальными тегами!!!
+        petType +
+        gender +
+        eyeColor +
+        tailLength +
+        name +
+        dateOfBirth +
+        email +
+        phone +
+        rules +
+    --> 
+    <form action="/pets/orders" method="post" class="main-form">
+        <label class="petType">
+            <span>Тип питомца</span>
+            <select name="petType" id="" class="petType__item">
+                <option value="cat">Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label>
+        <br>
+        <label class="gender">
+            <span>Пол</span>
+            <input type="radio" name="gender" value="boy" class="gender_item" checked>Мужской
+            <input type="radio" name="gender" value="girl" class="gender_item">Женский
+            <input type="radio" name="gender" value="none" class="gender_item">Cредний
+        </label>
+        <br>
+        <label class="eyeColor">
+            <span>Цвет глаз</span>
+            <input type="color" name="eyeColor" class="eyeColor__item">
+        </label>
+        <br>
+        <label class="name">
+            <span>Имя</span>
+            <input type="text" name="name" value = "Пушок" maxlength="16" class="name__item">
+        </label>
+        <br>
+        <label class="tailLength">
+            <span>Длина хвоста в см</span>
+            <input type="number" name="tailLength" max="120" min="7" value="8">
+        </label>
+        <br>
+        <label>
+            <span>Дата рождения</span>
+            <input type="date" name="dateOfBirth" placeholder="Date" value = "10.03.2003">
+        </label>
+        <br>
+        <label>
+            <span>Почта</span>
+            <input type="email" name="email" value="enteremail@mail.mail">
+        </label>
+        <br>
+        <label>
+            <span>Номер телефона</span>
+            <input type="tel" name="phone" value="+79226525609">
+        </label>
+        <br>
+        <input checked selected type="checkbox" name="rules" value="true">Я согласен с условиями
+        <input type="submit">
+        <input type="reset">
+    </form>
 </main>
 </body>
 </html>
