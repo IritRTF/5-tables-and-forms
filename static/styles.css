@@ -1,5 +1,5 @@
 body {
-    background-color: #F2F2F2;
+    background-color: #0d41ebc7;
 }
 
 main {
@@ -7,23 +7,46 @@ main {
     width: 100%;
     max-width: 1000px;
     margin: 30px auto;
-    padding: 30px;
-    background: white;
+    padding: 40px;
+    background: rgb(75, 73, 73);
     min-height: calc(100vh - 60px);
-    border-radius: 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+input {
+    background: rgb(102, 99, 99);
+    color: rgb(192, 192, 192);
+}
+
+.petType__item{
+    background: rgb(102, 99, 99);
 }
 
 h1 {
     font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin-top: 0;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
-    color: rgba(173,38,164,0.67);
+    color: rgba(255, 255, 255, 0.67);
+}
+
+td{
+    font-size: 15px;
+}
+
+.orders th{
+    font-size: 25px;
+}
+
+#check {
+    transform:scale(1.6);
 }
 
 .error {
-    color: rgba(173,30,24,0.88);
+    color: rgba(255, 8, 0, 0.88);
 }
 
 .orders {
