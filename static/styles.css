@@ -1,5 +1,5 @@
 body {
-    background-color: #F2F2F2;
+    background: linear-gradient(to right, #1c7465 0%, #6c5cd2 51%, #268172 100%);
 }
 
 main {
@@ -11,6 +11,7 @@ main {
     background: white;
     min-height: calc(100vh - 60px);
     border-radius: 20px;
+    font-weight: bold;
 }
 
 h1 {
@@ -28,4 +29,91 @@ h1 {
 
 .orders {
     margin: 20px 0;
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+}
+
+main h1{
+    font-weight: bold;
+}
+
+.gradient-button{
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #1c7465 0%, #6c5cd2 51%, #268172 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+    border-radius: 10px
+}
+
+label{
+    margin-bottom: 30px;
+    justify-content: center;
+    display: flex;
+}
+.gradient-button:hover {
+    background-position: right center;
+
+    border-radius: 50px;
+}
+
+label span{
+    margin-right: 10px;
+}
+.buttons{
+    padding-top: 50px;
+    display: flex;
+    justify-content:space-between;
+}
+input, select{
+    border: none;
+    border-bottom: 1px solid #1c7465;
+    text-align:center;
+    transition: .2s;
+}
+::placeholder {
+    text-align: center; 
+ }
+
+.eyeColor input{
+    border: 0;
+    position: relative;
+    top: -3px;
+    background: none;
+}
+
+input:hover, select:hover, .gender-item:hover{
+    cursor: pointer;
+    background-color:rgba(192, 192, 192, 0.1);
+    transform: scale(1.05);
+}
+input:checked, select:checked, .gender-item:checked{
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+
+select:checked{
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+
+.gender-item{
+    position: relative;
+    top: -2px;  
+}
+
+.reset:focus{
+    animation: bounceOutLeft;
+    animation-duration: 1s;
+}
+
+.submit:focus{
+    animation: bounceOutRight;
+    animation-duration: 1s;
 }

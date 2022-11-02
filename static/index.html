@@ -4,13 +4,83 @@
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
 <main>
-    <h1>Найди себе друга!</h1>
+    <h1>НАЙДИ СЕБЕ ДРУГА
 
+    </h1>
     <!--Форму размещай тут-->
+    <!-- В запросе нет обязательных полей:
+    !!!Задача предполагает, что каждое поле уникального типа или сделано уникальными тегами!!!
+        petType +
+        gender +
+        eyeColor +
+        tailLength +
+        name +
+        dateOfBirth +
+        email +
+        phone +
+        rules +
+    --> 
+    <form action="/pets/orders" method="post" class="main-form">
+        <label class="petType">
+            <span>Тип питомца</span>
+            <select name="petType" id="">
+                <option value="cat">Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label>
 
+        <label class="gender">
+            <span>Пол </span>
+            <input checked type="radio" name="gender" value="boy" class="gender-item">Мужской
+            <input type="radio" name="gender" value="girl" class="gender-item">Женский
+            <input type="radio" name="gender" value="none" class="gender-item">Cредний
+        </label>
+        
+        <label class="eyeColor">
+            <span>Цвет глаз</span> 
+            <input type="color" name="eyeColor">
+        </label>
+
+        <label class="name">
+            <span>Имя </span>
+            <input type="text" name="name" maxlength="16" placeholder="Пушок">
+        </label>
+        
+        <label class="tailLength">
+            <span>Длина хвоста в см </span>
+            <input type="number" name="tailLength" max="120" min="7" placeholder="8">
+        </label>
+        
+        <label>
+            <span>Дата рождения </span>
+            <input type="date" name="dateOfBirth" placeholder="Date">
+        </label>
+        
+        <label>
+            <span>Почта </span>
+            <input type="email" name="email" placeholder="enteremail@mail.mail">
+        </label>
+        
+        <label>
+            <span>Номер телефона </span>
+            <input type="tel" name="phone" placeholder="+79226525609">
+        </label>
+        
+        <input type="checkbox" name="rules" value="true">Я согласен с условиями
+        
+        <div class="buttons">
+        <input class="gradient-button submit" type="submit">
+        <input class="gradient-button reset" type="reset">
+        </div>
+    </form>
 </main>
 </body>
 </html>
