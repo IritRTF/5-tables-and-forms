@@ -8,9 +8,79 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
-
     <!--Форму размещай тут-->
-
+    <!-- В запросе нет обязательных полей:
+    !!!Задача предполагает, что каждое поле уникального типа или сделано уникальными тегами!!!
+        petType +
+        gender +
+        eyeColor +
+        tailLength +
+        name +
+        dateOfBirth +
+        email +
+        phone +
+        rules +
+    --> 
+    <form action="/pets/orders" method="post" class="main-form">
+        <label >
+            Тип питомца
+            <select  name="petType" class="box" id="">
+                <optgroup>
+                <option value="cat">Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+                </optgroup>
+            </select>
+        </label>
+        <br>
+        <label>
+            Пол
+            <input type="radio" name="gender" value="boy" checked>Мужской
+            <input type="radio" name="gender" value="girl">Женский
+            <input type="radio" name="gender" value="none ">Cредний
+        </label>
+        <br>
+        <label>
+            Цвет глаз
+            <input type="color" name="eyeColor">
+        </label>
+        <br>
+        <label>
+            Имя
+            <input type="text" name="name" maxlength="16" placeholder="Пушок">
+        </label>
+        <br>
+        <label>
+            Длина хвоста в см
+            <input type="number" name="tailLength" max="120" min="7" placeholder="8">
+        </label>
+        <br>
+        <label>
+            Дата рождения
+            <input type="date" name="dateOfBirth" placeholder="Date">
+        </label>
+        <br>
+        <label>
+            Почта
+            <input type="email" name="email" placeholder="enteremail@mail.mail">
+        </label>
+        <br>
+        <label>
+            Номер телефона
+            <input type="tel" name="phone" placeholder="+79226525609">
+        </label>
+        <br>
+        <input checked type="checkbox" name="rules" value="true">Я согласен с условиями
+        <!-- 
+        <label>
+            Правила<br>
+            <input type="checkbox" name="rules" value="love">Любить питомца<br>
+            <input type="checkbox" name="rules" value="like">Не обижать питомца<br>
+            <input type="checkbox" name="rules" value="feed">Кормить почаще
+        </label>--> 
+        <input type="submit" class="btn">
+        <input type="reset" class="btn">
+    </form>
 </main>
 </body>
 </html>

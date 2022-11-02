@@ -1,6 +1,24 @@
 body {
-    background-color: #F2F2F2;
+    background: radial-gradient(circle at 50% 270%, white, black);
+    font-size: 24px;
+    font-family: Arial;
 }
+
+.box {
+    width: 120px;
+    height: 30px;
+    
+    font-family:  cursive;
+    border-width: 1px;
+    background-color: #eee;
+    border-radius: 5px;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: 115% 45% url("https://cdn.icon-icons.com/icons2/3250/PNG/128/phone_vertical_scroll_filled_icon_201273.png") no-repeat;
+    background-size: 45px 45px;}
+
 
 main {
     box-sizing: border-box;
@@ -19,7 +37,7 @@ h1 {
     margin-top: 0;
     font-size: 50px;
     text-align: center;
-    color: rgba(173,38,164,0.67);
+    color: black;
 }
 
 .error {
@@ -28,4 +46,39 @@ h1 {
 
 .orders {
     margin: 20px 0;
+}
+.btn {
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 10px 25px 15px 0;
+	outline: none;
+	border: none;  
+	border-radius: 4px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #fff;
+	background-color: #000000;
+	box-shadow: 0 2px #686a6e;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+}
+.btn:hover {
+	background-color: #002fed;
+}
+.btn:active {
+	background-color: #2f599e !important;
+}
+.btn:focus-visible {
+	box-shadow: 0 0 0 3px lightskyblue;
+}
+.btn:disabled {
+	background-color: #6c87b5;
+	pointer-events: none;
 }
