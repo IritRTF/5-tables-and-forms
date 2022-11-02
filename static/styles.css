@@ -1,5 +1,5 @@
 body {
-    background-color: #F2F2F2;
+    background-color: #0e9992;
 }
 
 main {
@@ -8,9 +8,10 @@ main {
     max-width: 1000px;
     margin: 30px auto;
     padding: 30px;
-    background: white;
     min-height: calc(100vh - 60px);
     border-radius: 20px;
+    background: url(1.jpg) no-repeat 50% 110%;
+    background-color: white;
 }
 
 h1 {
@@ -28,4 +29,16 @@ h1 {
 
 .orders {
     margin: 20px 0;
+}
+.sendForm{
+    background-color: green;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+}
+.throwOffForm{
+    background-color: red;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
 }
