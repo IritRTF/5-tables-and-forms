@@ -3,6 +3,9 @@ const app = express();
 const port = 3000;
 const constructPageBody = require('./checkOrder');
 
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+
 
 const pageHead =
 `
@@ -45,4 +48,7 @@ app.post('/pets/orders', (request, response) => {
 
     response.send(`${pageHead}${pageBody}${pageFoot}`);
 });
+
+// body('name', 'Empty name').isLength({ min: 3, max: 50 });
+// body('age', 'Invalid age').optional({ checkFalsy: true }).isISO8601(),
 
