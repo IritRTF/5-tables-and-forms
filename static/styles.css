@@ -1,5 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
 }
 
 main {
@@ -7,25 +13,44 @@ main {
     width: 100%;
     max-width: 1000px;
     margin: 30px auto;
-    padding: 30px;
+    padding: 20px;
     background: white;
     min-height: calc(100vh - 60px);
     border-radius: 20px;
 }
 
 h1 {
-    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Segoe UI Light', 'Segoe UI', 'Helvetica Neue', Helvetica,
+        Arial, sans-serif;
     font-weight: 300;
     margin-top: 0;
     font-size: 50px;
     text-align: center;
-    color: rgba(173,38,164,0.67);
+    color: rgba(173, 38, 164, 0.67);
 }
 
 .error {
-    color: rgba(173,30,24,0.88);
+    color: rgba(173, 30, 24, 0.88);
 }
 
 .orders {
     margin: 20px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_item {
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form .label + * {
+    margin-top: 1px;
+}
+
+input[type='radio'] {
+    border: 0;
 }
