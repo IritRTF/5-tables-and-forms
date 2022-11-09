@@ -1,5 +1,6 @@
 body {
     background-color: #F2F2F2;
+    font-family: 'Montserrat', serif;
 }
 
 main {
@@ -13,19 +14,109 @@ main {
     border-radius: 20px;
 }
 
-h1 {
-    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    margin-top: 0;
-    font-size: 50px;
-    text-align: center;
-    color: rgba(173,38,164,0.67);
-}
-
 .error {
     color: rgba(173,30,24,0.88);
 }
 
 .orders {
     margin: 20px 0;
+}
+
+form
+{
+	background: #FF9E44;
+	border-radius: 35px;
+    padding: 15px 40px;
+	margin-left: auto;
+	margin-right: auto;
+    color: #F2F2F2;
+    position: relative;
+}
+
+form p label,
+option,
+p { 
+	font-style: normal;
+	font-weight: 500;
+	font-size: 25px;
+}
+
+select[name=petType],
+input[name=tailLength],
+input[name=dateOfBirth],
+input[name=name],
+input[name=email],
+input[name=phone],
+input[name=number] {
+	background: #FFFFFF;
+	border-radius: 35px;
+	border-style: none;
+	outline: none;
+	width: 400px;
+	height: 40px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 39px;
+	color: #3D80A6;
+	padding: 0 20px;
+    position: absolute;
+    left: 300px;
+}
+
+input[name=rules],
+input[name=gender] {
+    width: 25px;
+	height: 25px;
+    margin: 10px;
+}
+
+input[name=eyeColor] {
+    width: 100px;
+	height: 40px;
+    padding: 5px;
+    border-radius: 35px;
+    position: absolute;
+    left: 300px;
+}
+
+input[name=eyeColor]::value {
+    width: 100px;
+	height: 40px;
+    padding: 5px;
+    border-radius: 35px;
+}
+
+
+input[type=reset],
+input[type=submit] {
+	background: #FFFFFF;
+	border-radius: 35px;
+	margin: 20px 10px;
+	border-style: none;
+	outline: none;
+	width: 180px;
+	height: 40px;
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+	color: #3D80A6;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 42px;
+	line-height: 59px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 20px;
+	margin: 0;
+}
+
+input[name=eyeColor]::-webkit-color-swatch-wrapper {
+	padding: 3px;
+}
+input[name=eyeColor]::-webkit-color-swatch {
+	border: none;
+    padding: 0;
+    border-radius: 15px;
 }

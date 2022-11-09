@@ -2,15 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/24bc325ba6.js" crossorigin="anonymous"></script>
     <title>Форма выбора питомца</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <main>
-    <h1>Найди себе друга!</h1>
+    <form action="/pets/orders" method="post">
+        <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+        <p><label>Tип питомца
+            <select name="petType">
+              <option value="cat" selected>Кошка</option>
+              <option value="dog">Собака</option>
+              <option value="tiger">Тигр</option>
+            </select>
+        </label></p>
 
+        <p>
+            <input type="radio" name="gender" value="boy" checked>Мальчик
+            <input type="radio" name="gender" value="girl">Девочка
+        </p>
+
+        
+        <p><label>Цвет глаз
+            <input type="color" name="eyeColor" value="#5C8BBC" required>
+        </label></p>
+        
+        <p><label>Длина хвоста
+            <input type="number" name="tailLength" value="20" min="7" max="120" required>
+        </label></p>
+
+        <p><label>Имя
+            <input type="text" name="name" value="Пушок" min="7" max="120" minlength="3" maxlength="50" required>
+        </label></p>
+
+        <p><label>Дата рождения
+            <input type="date" name="dateOfBirth" value="2018-07-22" required>
+        </label></p>
+
+        <p><label>Эл. адрес
+            <input type="email" name="email" value="sasha@mail.ru" required>
+        </label></p>
+
+        <p><label>Телефон
+            <input type="tel" name="phone" value="891202223388" required>
+        </label></p>
+
+        <p>
+            <input type="checkbox" name="rules" value="true" checked required>Я согласен с условиями
+        </p>
+
+        <input type="reset">
+        <input type="submit" name="submit" value="Заказать">
+    </form>
 </main>
 </body>
 </html>
