@@ -10,7 +10,55 @@
     <h1>Найди себе друга!</h1>
 
     <!--Форму размещай тут-->
-
+    <form class="form1" action="/pets/orders" method="post">
+        <label>
+            <p class="label">Кого ищешь?</p>
+            <select class="select1" name="petType">
+                <option value="cat">Кота</option>
+                <option value="dog">Собаку</option>
+                <option value="tiger">Тигра</option>
+            </select>
+        </label>
+        <label>
+            <p class="label">Какого пола?</p>
+            <p><input type="radio" name="gender" value="boy" checked />Мальчика</p>
+            <p><input type="radio" name="gender" value="girl" />Девочку</p>
+            <p><input type="radio" name="gender" value="none" />Неважно</p>
+        </label>
+        <label>
+            <p class="label">Какого цвета глаза?</p>>
+            <input type="color" name="eyeColor" class="colorSelector" required>
+        </label>
+        <label>
+            <p class="label">Какой длины хвост?</p>
+            <input type="number" name="tailLength" min="7" max="120" value="7" required>
+        </label>
+        <label>
+            <p class="label">Имя твоего друга?</p>
+            <input type="text" name="name" minlength="3" maxlength="30" placeholder="Снежок" required>
+        </label>
+        <label>
+            <p class="label">Дата рождения?</p>
+            <input type="date" name="dateOfBirth" required>
+        </label>
+        <label>
+            <p class="label">Ваш email?</p>
+            <input type="email" name="email" placeholder="Ivanov.Ivan@mail.ru" required>
+        </label>
+        <label>
+            <p class="label">Телефон?</p>
+            <input type="tel" name="phone" placeholder="+78005553535" required>
+        </label>
+        <label>
+            <p class="label">Согласны ли вы с нашими правилами?</p>
+            <input type="checkbox" name="rules" value="true" required>
+        </label>
+        <input type="submit" value="Отправить">
+        <label>
+            <p class="label">Значения поумолчанию</p>
+            <input type="reset" name="reset">
+        </label>
+    </form>
 </main>
 </body>
 </html>

@@ -29,3 +29,13 @@ h1 {
 .orders {
     margin: 20px 0;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
