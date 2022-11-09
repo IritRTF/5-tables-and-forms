@@ -2,6 +2,10 @@ body {
     background-color: #F2F2F2;
 }
 
+.err {
+    border: 1px solid red;
+}
+
 main {
     box-sizing: border-box;
     width: 100%;
@@ -43,4 +47,5 @@ label {
 
 label span {
     display: block;
+    margin-bottom: 3px;
 }
