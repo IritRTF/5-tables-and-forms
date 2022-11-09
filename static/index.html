@@ -6,11 +6,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main>
-    <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
-
-</main>
+    <main>
+        <h1>Найди себе друга!</h1>
+        <div class="container">
+            <form action="/pets/orders" method="POST">
+                <label class="question-label">
+                    Тип питомца
+                    <select class="question-input" name="petType">
+                        <option name="dogType" value="dog">Собака</option>
+                        <option name="catType" value="cat">Кошка</option>
+                        <option name="hamsterType" value="tiger">Тигр</option>
+                    </select>
+                </label>
+                <label class="question-label">
+                    Пол животного <br>
+                    <input class="question-input radioclass" type="radio" name="gender" value="boy">Мальчик<br>
+                    <input class="question-input radioclass" type="radio" name="gender" value="girl">Девочка<br>
+                </label>
+                <label class="question-label">
+                    Цвет глаз
+                    <input class="question-input" type="color" name="eyeColor" placeholder="Укажите цвет глаз">
+                </label>
+                <label class="question-label">
+                    Длина хвоста
+                    <input
+                     class="question-input" type="number" name="tailLength" placeholder="Введите длину хвоста" min="7" max="120">
+                </label>
+                <label class="question-label">
+                    Имя
+                    <input class="question-input" type="text" name="name" placeholder="Введите своё имя" minlength="3" maxlength="30">
+                </label>
+                <label class="question-label">
+                    Дата рождения
+                    <input class="question-input" type="date" name="dateOfBirth" placeholder="Введите свою дату рождения">
+                </label>
+                <label class="question-label">
+                    Email адрес
+                    <input class="question-input" type="email" name="email" placeholder="Введите email">
+                </label>
+                <label class="question-label">
+                    Номер телефона
+                    <input class="question-input" type="tel" name="phone" placeholder="Введите номер телефона">
+                </label>
+                <label class="question-label">
+                    <input class="question-input radioclass" type="checkbox" value="true" name="rules" required> Я соглашась с правилами использования
+                </label>
+                <label class="question-label">
+                    Сбросить значения до дефолтных
+                    <input class="question-input" type="reset" name="submit" value="Сброс">
+                </label>
+                <label class="question-label">
+                    Отправить заявку
+                    <input class="question-input" type="submit" name="submit" value="Отправить">
+                </label>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
