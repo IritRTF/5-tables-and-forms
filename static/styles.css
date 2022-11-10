@@ -33,6 +33,26 @@ h1 {
     display: block;
 }
 
+.select{
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.selectColor{
+    border-radius: 0%;
+    padding: 0;
+    width: 25px;
+}
+
+.rules{
+    display: none;
+}
+
+.btnReset{
+    display: block;
+}
+
 label input {
     display: block;
     font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
