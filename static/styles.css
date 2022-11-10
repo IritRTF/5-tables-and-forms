@@ -29,3 +29,12 @@ h1 {
 .orders {
     margin: 20px 0;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+}
