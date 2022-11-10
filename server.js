@@ -54,6 +54,7 @@ app.post('/pets/orders', (request, response) => {
 });
 
 function dataValidation(requestBody) {
+    const incorrectFields = {};
     const conditions = {
         petType: (value) => {
             let arr = ['cat', 'dog', 'tiger'];
@@ -102,20 +103,19 @@ function dataValidation(requestBody) {
             return value === 'true';
         }
     };
-    const wrongFields = {};
     for (key in conditions) {
         console.log(key);
         if (!conditions[key](requestBody[key])) 
-            wrongFields[key] = requestBody[key];
+            incorrectFields[key] = requestBody[key];
     }
-    console.log(wrongFields);
-    return wrongFields;
+    console.log(incorrectFields);
+    return incorrectFields;
 }
 
-function constructValidPageBody(wrongFields) {
+function constructValidPageBody(incorrectFields) {
     // let form = document.querySelector('.main-form')
     // console.log(form);
-    // for(el in wrongFields){
+    // for(el in incorrectFields){
     //     console.log(el);
     //     let elementByAttribute = document.querySelector('.tailLength');
     //     // document.getElementsByName('tailLength').classList.add('err');
@@ -123,9 +123,8 @@ function constructValidPageBody(wrongFields) {
     //     // form.elements.el
     // }
     let result = '';
-    for (let field in wrongFields) {
-        result += `<p>Данные, введенные в поле ${field}, некорректны.</p>`;
-    }
+    for (el in incorrectFields)
+        result += `<p>Данные, введенные в поле ${el}, некорректны.</p>`;
     return result;
 }
 
