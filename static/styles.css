@@ -1,5 +1,8 @@
 body {
-    background-color: #F2F2F2;
+    background-image: url("https://wallpapersmug.com/large/2fda8d/white-wall-lamp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -8,24 +11,155 @@ main {
     max-width: 1000px;
     margin: 30px auto;
     padding: 30px;
-    background: white;
     min-height: calc(100vh - 60px);
     border-radius: 20px;
 }
 
 h1 {
-    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    margin-top: 0;
-    font-size: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 60px;
     text-align: center;
-    color: rgba(173,38,164,0.67);
+    color: #ffffff;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    filter: drop-shadow(0 0 6px #6a6a6a);
+}
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    filter: drop-shadow(0 0 6px #6a6a6a);
+}
+
+input,
+select {
+    margin-bottom: 8px !important;
+}
+
+.wrapper {
+    justify-content: space-around;
+    display: flex;
+    flex: auto;
+    margin: auto;
+}
+
+#eyeColor {
+    min-height: 36px;
+    padding: 0;
+}
+
+.form-check {
+    color: white;
+    margin: 8px 0 8px 6px;
+    filter: drop-shadow(0 0 8px #ffce7a);
 }
 
 .error {
-    color: rgba(173,30,24,0.88);
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 4px 8px;
+    border: 4px dashed rgba(255, 0, 0, 0.4);
+    border-radius: 4px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.88);
+    background-color: white;
+    width: fit-content;
+}
+
+.go-back {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    float: right;
+    margin-right: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+.go-back:hover {
+    background-color: #72afd7;
+    transition: 0.1s;
+}
+
+.settings {
+    background-color: #efefef;
+    border: 2px solid #ffce7a;
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 4px 8px;
+}
+
+.my-2 button {
+    border-width: 0;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 20%;
+    height: 32px;
+}
+
+.button-submit {
+    background-color: #ddffdd;
+    filter: drop-shadow(3px 3px 0 #8cb48c);
+    transition: 0.1s;
+}
+
+.button-submit:hover {
+    background-color: #7cff7c;
+    transition: 0.1s;
+}
+
+.button-reset {
+    background-color: #ffe1e1;
+    filter: drop-shadow(3px 3px 0 #ba9191);
+    transition: 0.1s;
+}
+
+.button-reset:hover {
+    background-color: #ffadad;
+    transition: 0.1s;
+}
+
+.after-forms-actions {
+    margin-left: 6%;
 }
 
 .orders {
+    border: 4px solid #ffce7a;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.75);
+    filter: drop-shadow(0 0 6px #ffce7a);
+    width: 100%;
     margin: 20px 0;
+}
+
+.orders th {
+    border: 1px solid gray;
+}
+
+.orders td {
+    padding-left: 2px;
+    text-align: left;
+    border: 1px dashed gray;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: -2;
+}
+
+.text-center {
+    color: #d63900;
+    -webkit-text-stroke: 1px rgb(235, 47, 0);
 }
