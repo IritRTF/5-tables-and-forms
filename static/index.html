@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +8,80 @@
 </head>
 <body>
 <main>
-    <h1>Найди себе друга!</h1>
+    <h1>Find a friend!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="post">
+        <p><label for="petType">What type of pet do you prefer?</label><br>
+            <select name = "petType" required>
+            <option value=''>Please, select the type of your future pet:</option>
+            <option value='cat'>Cat</option>
+            <option value='dog'>Dog</option>
+            <option value='tiger'>Tiger</option>
+        </select></p>
+
+        <p><label for="gender">What gender do you want to buy?</label><br>
+        <input type="radio" id="genderChoice1"
+        name="gender" value="boy">
+        <label for="genderChoice1">boy</label>
+
+        <input type="radio" id="genderChoice2"
+        name="gender" value="girl">
+        <label for="genderChoice2">girl</label>
+
+        <input type="radio" id="genderChoice3"
+        name="gender" value="none" required>
+        <label for="genderChoice3">none</label></p>
+
+        <p><label for="gender">What is your favourite eye color?</label><br>
+        <input type="checkbox" name="eyeColor" value="#0000FF">Blue
+        <input type="checkbox" name="eyeColor" value="#A52A2A">Brown
+        <input type="checkbox" name="eyeColor" value="#808080">Grey
+        <input type="checkbox" name="eyeColor" value="#008000">Green
+        <input type="checkbox" name="eyeColor" value="#000000" checked>Doesn't matter</p>
+
+
+        <p><label for="tailLength">Please, choose the tail length:</label><br>
+        <input type="range" step="2" min="0" max="30" list="rangeList" name="tailLength" onchange="document.getElementById('tailLength').innerHTML = this.value;">
+        <datalist id="rangeList">
+            <option value="0" label="0">
+            <option value="2" label="2">
+            <option value="4" label="4">
+            <option value="6" label="6">    
+            <option value="8" label="8">
+            <option value="10" label="10">
+            <option value="12" label="12">
+            <option value="14" label="14">
+            <option value="16" label="16">
+            <option value="18" label="18">
+            <option value="20" label="20">
+            <option value="22" label="22">
+            <option value="24" label="24">
+            <option value="26" label="26">
+            <option value="28" label="28">
+            <option value="30" label="30"> 
+        </datalist>
+        <span id="tailLength"></span></p>
+
+        <p><label for="name">What is your pet's name?</label><br>
+        <input type="text" name="name" minlength="3" maxlength="50" required></p>
+
+        <p><label for="dateOfBirth">When is your pet's birthday?</label><br>
+        <input type="date" name="dateOfBirth" required></p>
+
+        <p><label for="email">E-mail</label><br>
+        <input type="text" name="email" required placeholder="Please, enter your E-mail"></p>
+
+        <p><label for="phone"></label>Please, enter your phone number in the format +7 xxx xxx-xx-xx:</label><br>
+        <input type="tel" name="phone" required
+            pattern="\+?[0-9\s\-\(\)]+"></p>
+       
+        <p><label for="rules">I accept bla bla</label><br>
+            <input type="checkbox" name="rules" value="true" required>Yes</p>
+
+        <p><input type="reset" value="Default values"> <input type = "submit" value="Send"></p>
+        
+
+    </form>
 
 </main>
 </body>
