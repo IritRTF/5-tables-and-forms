@@ -1,16 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Форма выбора питомца</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<main>
-    <h1>Найди себе друга!</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+      <!--Форму размещай тут-->
+      <form class="form" action="/pets/orders" method="post">
+        <label class="form_item">
+          <p class="label">Тип питомца:</p>
+          <p><input type="radio" name="petType" value="cat" checked />Кот</p>
+          <p><input type="radio" name="petType" value="dog" />Собака</p>
+          <p><input type="radio" name="petType" value="tiger" />Тигр</p>
+        </label>
 
-</main>
-</body>
+        <label class="form_item">
+          <p class="label">Пол:</p>
+          <select name="gender" id="gender" required>
+            <option value="boy">Мальчик</option>
+            <option value="girl">Девочка</option>
+          </select>
+        </label>
+
+        <label class="form_item">
+          <p class="label">Длина хвоста:</p>
+          <input
+            type="number"
+            name="tailLength"
+            min="7"
+            max="120"
+            value="7"
+            id="tailLength"
+          />
+        </label>
+
+        <label class="form_item">
+          <p class="label">Имя:</p>
+          <input
+            type="text"
+            name="name"
+            minlength="3"
+            maxlength="30"
+            id="name"
+            placeholder="Тиша"
+            required
+          />
+        </label>
+
+        <label class="form_item">
+          <p class="label">Цвет глаз:</p>
+          <input type="color" name="eyeColor" value="#000000" />
+        </label>
+        <label class="form_item">
+          <p class="label">Дата рождения:</p>
+          <input type="date" name="dateOfBirth" required />
+        </label>
+
+        <label class="form_item">
+          <p class="label">Email:</p>
+          <input
+            type="email"
+            name="email"
+            placeholder="example@example.com"
+            required
+          />
+        </label>
+
+        <label class="form_item">
+          <p class="label">Телефон:</p>
+          <input
+            class="form_item"
+            type="tel"
+            name="phone"
+            placeholder="+71234567890"
+          />
+        </label>
+
+        <label class="form_item">
+          <p class="label">Правила:</p>
+          <input
+            class="form_item"
+            type="checkbox"
+            name="rules"
+            value="true"
+            required
+          />
+        </label>
+
+        <input class="form_item" type="submit" value="Отправить" />
+        <input
+          class="form_item"
+          type="reset"
+          name="reset"
+          value="Сбросить параметры питомца"
+        />
+      </form>
+    </main>
+  </body>
 </html>
