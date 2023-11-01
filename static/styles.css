@@ -1,5 +1,5 @@
 body {
-    background-color: #F2F2F2;
+    background-color: #8d7949;
 }
 
 main {
@@ -7,25 +7,54 @@ main {
     width: 100%;
     max-width: 1000px;
     margin: 30px auto;
-    padding: 30px;
-    background: white;
+    padding: 40px;
+    background: rgb(248, 239, 219);
     min-height: calc(100vh - 60px);
-    border-radius: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Trebuchet MS", cursive; 
+    font-size: 30px;
+}
+
+input {
+    background: #d0c7b1;
+    color: rgb(0, 0, 0);
+    height: 25px;
+}
+
+.petType__item{
+    background: #d0c7b1;
+    color: rgb(0, 0, 0);
+    height: 25px;
 }
 
 h1 {
-    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     font-weight: 300;
     margin-top: 0;
-    font-size: 50px;
-    text-align: center;
-    color: rgba(173,38,164,0.67);
+    font-size: 60px;
+    text-align: center;   
+}
+
+
+td{
+    font-size: 15px;
+}
+
+.orders th{
+    font-size: 25px;
+}
+
+#check {
+    transform: scale(2);
 }
 
 .error {
-    color: rgba(173,30,24,0.88);
+    color: rgba(255, 8, 0, 0.88);
 }
 
 .orders {
     margin: 20px 0;
 }
+
+

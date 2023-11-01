@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
@@ -7,10 +7,82 @@
 </head>
 <body>
 <main>
-    <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
-
+    <h1><b>Найди себе друга!</b></h1>
+    
+    <form action="/pets/orders" method="post" class="main-form">
+        
+        <label class="petType">
+            <span>Тип питомца:</span>
+            <select name="petType" id="" class="petType__item">
+                <option value="cat">Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label>
+        
+        <br>
+        
+        <label class="sex">
+            <span>Пол:</span>
+            <input type="radio" name="sex" value="boy" class="sex_item"> Мужской
+            <input type="radio" name="sex" value="girl" class="sex_item"> Женский
+            <input type="radio" name="sex" value="none" class="sex_item" checked> Неважно
+        </label>
+        
+        <br>
+        
+        <label class="eyeColor">
+            <span>Цвет глаз:</span>
+            <input type="color" name="eyeColor" class="eyeColor__item">
+        </label>
+        
+        <br>
+        
+        <label class="tailLength">
+            <span>Длина хвоста в сантиметрах:</span>
+            <input type="number" name="tailLength" max="120" min="7" placeholder="От 5 см до 100 см">
+        </label>
+        
+        <br>
+        
+        <label class="ownerName">
+            <span>Имя хозяина:</span>
+            <input type="text" name="name" placeholder = "Иванов Иван Иванович" maxlength="23" class="name__item">
+        </label>
+        
+        <br>
+        
+        <label>
+            <span>Дата рождения:</span>
+            <input type="date" name="dateOfBirth" placeholder="Date" >
+        </label>
+        
+        <br>
+        
+        <label>
+            <span>Почта:</span>
+            <input type="email" name="email" placeholder="youremail@mail.ru">
+        </label>
+        
+        <br>
+        
+        <label>
+            <span>Номер телефона:</span>
+            <input type="tel" name="phone" placeholder="+71234567890">
+        </label>
+        
+        <br>
+        
+        <div style="height: 200px;"></div>
+        
+        <input checked selected type="checkbox" id="check" name="rules" value="true"> Я согласен с условиями
+        
+        <input type="submit">
+        
+        <input type="reset">
+    
+    </form>
+    
 </main>
 </body>
-</html>
+</html> 
