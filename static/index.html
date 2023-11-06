@@ -10,7 +10,70 @@
     <h1>Найди себе друга!</h1>
 
     <!--Форму размещай тут-->
+    <form class = 'form' action="/pets/orders" method="post" >
+        
+        <label class = 'form_item'>Вид животного
+            <select name="petType" >
+                <option value="tiger" selected>тигр</option>
+                <option value="cat">кот</option>
+                <option value="dog">собака</option>
+              </select>
+        </label>
 
+
+
+        <label class = 'form_item' >Пол животного
+                <input type="radio" name="gender" value="boy" >M
+                <input type="radio" name="gender" value="girl" >F
+                <input type="radio" name="gender" value="none" checked>none
+        </label>
+
+        <br>
+
+        <label class = 'form_item' >Цвет глаз
+            <input type="color" name="eyeColor" >
+        </label>
+
+        <br>
+
+        <label class = 'form_item'>Длина хвоста
+            <input type="number" name="tailLength" value = 10>
+        </label>
+
+        <br>
+
+        <label class = 'form_item'>Имя хозяина
+            <input type="text" name="name"  value="Господин">
+        </label>
+
+        <br>
+
+        <label class = 'form_item'>Дата рождения
+            <input type="date" name="dateOfBirth" required>
+        </label>
+
+        <br>
+
+        <label class = 'form_item'>Email
+            <input type="email" name="email" placeholder = 'example@gmail.com'>
+        </label>
+
+        <br>
+
+        <label class = 'form_item'>Номер телефона 
+            <input type="text" name="phone" placeholder = '+79122558672' >
+        </label>
+
+        <br>
+
+        <label class = 'form_item'>Пользовательское соглашение
+            <input type="checkbox" name="rules" value = true >
+        </label>
+        
+        <br>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Сброс">
+    </form>
 </main>
 </body>
 </html>
