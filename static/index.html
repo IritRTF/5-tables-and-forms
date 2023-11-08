@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Форма выбора питомца</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<main>
-    <h1>Найди себе друга!</h1>
+    <main>
+        <h1>Найди себе друга!</h1>
 
-    <form class="form" action="/pets/orders" method="post">
-        <label class="petType">
-            <span>Тип питомца</span>
-            <select name="petType">
-                <option value="cat">кот</option>
-                <option value="dog">собака</option>
-            </select>
-        </label>
-        <br>
-        <label class="gender">
-            <span>Пол</span>
-            <select name="gender">
-                <option value="boy">мужской</option>
-                <option value="girl">женский</option>
-            </select>
-        </label>
-        <br>
-        <label class="eyeColor">
-            <span>Цвет глаз</span>
+        <form class="form" action="/pets/orders" method="post">
+            <label class="petType">
+                <span>Тип питомца</span>
+                <select name="petType">
+                    <option value="cat">кот</option>
+                    <option value="dog">собака</option>
+                </select>
+            </label>
+            <br>
+            <label class="gender">
+                <span>Пол</span>
+                <select name="gender">
+                    <option value="boy">мужской</option>
+                    <option value="girl">женский</option>
+                </select>
+            </label>
+            <br>
+            <label class="eyeColor">
+                <span>Цвет глаз</span>
                 <input type="color" name="eyeColor" value="#000000">
-        </label>
-        <br>
-        <label class="tailLength">
-            <span>Размер хвоста</span>
-            <input type="number" name="tailLength" min="7" max="120" value="7" id="tailLength">
-        </label>
-        <br>
-        <label class="name">
-            <span>Имя</span>
-            <input type="text" name="name" minlength="3" maxlength="50" id="name" placeholder="Федя">
-        </label>
-        <br>
-        <label class="dateOfBirth">
-            <span>Дата рождения</span>
-            <input type="date" name="dateOfBirth" placeholder="Date">
-        </label>
-        <br>
-        <label class="email">
-            <span>Электронная почта</span>
-            <input type="email" name="email" placeholder="email@email.com">
-        </label>
-        <br>
-        <label class="phone">
-            <span>Телефон</span>
-            <input type="tel" name="phone" placeholder="+79123456789">
-        </label>
-        <br>
-        <label class="rules">
-            <span>Я прочитал(а) правила и соглашаюсь полностью </span>
-            <input checked selected type="checkbox" name="rules" id="check" value="true">
-        </label>
-        <br>
-        <input type="submit" value="отправить">
-        <input type="reset" value="сбросить значения">
-    </form>
+            </label>
+            <br>
+            <label class="tailLength">
+                <span>Размер хвоста</span>
+                <input type="number" name="tailLength" min="7" max="120" value="7" id="tailLength">
+            </label>
+            <br>
+            <label class="name">
+                <span>Имя</span>
+                <input type="text" name="name" minlength="3" maxlength="50" id="name" placeholder="Федя">
+            </label>
+            <br>
+            <label class="dateOfBirth">
+                <span>Дата рождения</span>
+                <input type="date" name="dateOfBirth" placeholder="Date">
+            </label>
+            <br>
+            <label class="email">
+                <span>Электронная почта</span>
+                <input type="email" name="email" placeholder="email@email.com">
+            </label>
+            <br>
+            <label class="phone">
+                <span>Телефон</span>
+                <input type="tel" name="phone" placeholder="+79123456789">
+            </label>
+            <br>
+            <label class="rules">
+                <span>Я прочитал(а) правила и соглашаюсь полностью </span>
+                <input checked selected type="checkbox" name="rules" id="check" value="true">
+            </label>
+            <br>
+            <input type="submit" value="отправить">
+            <input type="reset" value="сбросить значения">
+        </form>
 
-</main>
+    </main>
 </body>
+
 </html>
