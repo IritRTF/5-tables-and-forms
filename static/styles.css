@@ -1,16 +1,18 @@
 body {
     background-color: #F2F2F2;
+    font-family: system-ui, sans-serif
 }
 
 main {
     box-sizing: border-box;
-    width: 100%;
+    width: 44em;
     max-width: 1000px;
-    margin: 30px auto;
+    margin: 0 auto;
     padding: 30px;
     background: white;
     min-height: calc(100vh - 60px);
     border-radius: 20px;
+    margin-top: 1rem;
 }
 
 h1 {
@@ -29,3 +31,22 @@ h1 {
 .orders {
     margin: 20px 0;
 }
+
+label,
+input,
+select
+{
+  font-size: 1.3rem;
+  line-height: 1.2
+}
+
+label {
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+
+  input
+  {
+    padding: 0.4rem;
+    width: 100%;
+  }
