@@ -10,7 +10,47 @@
     <h1>Найди себе друга!</h1>
 
     <!--Форму размещай тут-->
-
+    <form action="/pets/orders" method="Post">
+        <p>
+          <label for="petType">Введите тип питомца:</label>
+          <input type="text" name="petType" required>
+        </p>
+        <p>
+          <label for="name">Введите имя:</label>
+          <input type="text" name="name" required>
+        </p>
+        <p>
+          <label for="gender">Введите пол:</label>
+          <input type="text" name="gender" required>
+        </p>
+        <p>
+            <label for="email">Введите email:</label>
+            <input type="email" name="email" required>
+        </p>
+          <p>
+            <label for="eyeColor">Введите цвет глаз:</label>
+            <input type="color" name="eyeColor" required>
+        </p>
+        <p>
+            <label for="tailLength">Введите длину хвоста:</label>
+            <input type="number" name="tailLength" required>
+        </p>
+        <p>
+            <label for="dateOfBirth">Введите дату рождения:</label>
+            <input type="date" name="dateOfBirth" required>
+        </p>
+        <p>
+            <label for="phone">Введите ваш телефон:</label>
+            <input type="number" name="phone" required>
+        </p>
+        <p>
+            <label for="rules">Введите правила:</label>
+            <input type="checkbox" name="rules" value = "true" required>
+        </p>
+        <button type="submit">Отправить</button>
+        <button type="reset">Отправить</button>
+      </form>
+      
 </main>
 </body>
 </html>
