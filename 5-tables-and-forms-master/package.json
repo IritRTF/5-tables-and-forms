@@ -1,0 +1,14 @@
+{
+  "name": "tables-and-forms",
+  "version": "1.0.0",
+  "description": "tables and forms task",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
