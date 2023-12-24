@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма выбора питомца</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+    
+
+    <main>
+        <h1>Find Your Pet!</h1>
+    
+        <!-- Form for choosing a pet -->
+        <form id="petForm" action="/pets/orders" method="POST">
+            <!-- Field for entering the pet's name -->
+            <label for="petName">Pet's Name:</label>
+            <input type="text" id="petName" name="petName" placeholder="Enter the name" required>
+    
+            <!-- Field for choosing the type of pet -->
+            <label for="petType">Type of Pet:</label>
+            <select id="petType" name="petType" required>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="bird">Bird</option>
+                <option value="rabbit">Rabbit</option>
+                <!-- Add more options as needed -->
+            </select>
+    
+            <!-- Field for choosing the age -->
+            <label for="petAge">Pet's Age:</label>
+            <input type="number" id="petAge" name="petAge" placeholder="Enter the age" required>
+    
+            <!-- Field for entering a brief description of the pet -->
+            <label for="petDescription">Description:</label>
+            <textarea id="petDescription" name="petDescription" placeholder="Tell us about the pet"></textarea>
+    
+            <!-- Checkboxes for additional features -->
+            <label>Additional Features:</label>
+            <div>
+                <input type="checkbox" id="vaccinated" name="vaccinated">
+                <label for="vaccinated">Vaccinated</label>
+            </div>
+            <div>
+                <input type="checkbox" id="trained" name="trained">
+                <label for="trained">Trained</label>
+            </div>
+    
+            <!-- Button to submit the form -->
+            <button type="submit">Submit</button>
+    
+            <!-- Button to reset the form to default values -->
+            <button type="reset">Reset</button>
+        </form>
+    
+        <!-- Table to display orders -->
+        <div class="orders">
+            <h2>Orders:</h2>
+            <table>
+                <!-- Here orders will be displayed -->
+            </table>
+        </div>
+        <script>
+            document.getElementById('petForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevents the default form submission
+        
+                // Get form data
+                const formData = new FormData(event.target);
+        
+                // Convert form data to JSON for better readability
+                const formDataObject = {};
+                formData.forEach((value, key) => {
+                    formDataObject[key] = value;
+                });
+        
+                // Log form data to console
+                console.log('Form Data:', formDataObject);
+        
+                // TODO: Send form data to server (you can use fetch or another method)
+                // ...
+        
+                // Clear the form after submission
+                event.target.reset();
+            });
+        </script>
+    </main>
+
+</main>
+</body>
+</html>

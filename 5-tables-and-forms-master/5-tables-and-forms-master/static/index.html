@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма выбора питомца</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+    <h1>Найди себе друга!</h1>
+
+    <!-- index.html -->
+
+<form action="/pets/orders" method="POST" id="petForm">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" placeholder="Введите имя" required>
+
+    <label for="petType">Тип питомца:</label>
+    <select id="petType" name="petType" required>
+        <option value="dog">Собака</option>
+        <option value="cat">Кошка</option>
+        <option value="rabbit">Кролик</option>
+    </select>
+
+    <label for="age">Возраст:</label>
+    <input type="number" id="age" name="age" placeholder="Введите возраст" required>
+
+    <label>Пол:</label>
+    <label for="male">
+        <input type="radio" id="male" name="gender" value="male" required> Мужской
+    </label>
+    <label for="female">
+        <input type="radio" id="female" name="gender" value="female" required> Женский
+    </label>
+
+    <label for="color">Цвет:</label>
+    <input type="color" id="color" name="color" required>
+
+    <label for="description">Описание:</label>
+    <textarea id="description" name="description" placeholder="Введите описание" required></textarea>
+
+    <button type="submit">Отправить заказ</button>
+    <button type="reset">Сбросить значения</button>
+</form>
+
+
+</main>
+</body>
+</html>
