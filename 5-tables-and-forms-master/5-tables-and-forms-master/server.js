@@ -25,6 +25,22 @@ const pageFoot =
 </html>
 `;
 
+
+app.post('/pets/orders', (request, response) => {
+    const reqBody = request.body;
+
+   
+    if (!reqBody.name || !reqBody.petType || !reqBody.age || !reqBody.gender || !reqBody.color || !reqBody.description) {
+        return response.send(`${pageHead}<p class="error">Ошибка: Все поля должны быть заполнены</p>${pageFoot}`);
+    }
+
+    const pageBody = constructPageBody(reqBody);
+
+    console.log(request.body);
+
+    response.send(`${pageHead}${pageBody}${pageFoot}`);
+});
+
 app.listen(port, (err) => {
     if (err) {
         return console.log('something bad happened', err);

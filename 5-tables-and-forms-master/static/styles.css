@@ -1,36 +1,37 @@
-
-
 body {
-    background-color: #F2F2F2;
+    background-color: #FFE4C4; /* Light Goldenrod Yellow */
+    font-family: "Arial", sans-serif;
 }
 
 main {
     box-sizing: border-box;
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 30px auto;
     padding: 30px;
-    background: white;
+    background: #FFFFFF; /* White */
     min-height: calc(100vh - 60px);
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin-top: 0;
-    font-size: 50px;
+    font-size: 36px;
     text-align: center;
-    color: rgba(173,38,164,0.67);
+    color: #4CAF50; /* Green */
 }
 
 form {
-    display: grid;
-    grid-gap: 15px;
+    margin-top: 20px;
 }
 
 label {
-    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333; /* Dark Gray */
 }
 
 input,
@@ -38,51 +39,46 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    box-sizing: border-box;
+    margin-bottom: 16px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: rgba(173,38,164,0.67);
+    background-color: #4CAF50; /* Green */
     color: white;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-button[type="reset"] {
-    background-color: #ccc;
-    margin-left: 10px;
-}
-
-
-
-main {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 30px;
-    background: white;
-    min-height: calc(100vh - 60px);
-    border-radius: 20px;
-}
-
-h1 {
-    font-family: "Segoe UI Light", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    margin-top: 0;
-    font-size: 50px;
-    text-align: center;
-    color: rgba(173,38,164,0.67);
-}
-
-.error {
-    color: rgba(173,30,24,0.88);
+button:hover {
+    background-color: #45a049;
 }
 
 .orders {
-    margin: 20px 0;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50; /* Green */
+    color: white;
 }
