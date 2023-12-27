@@ -8,8 +8,62 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+    <form action="/pets/orders" method="Post">
+        <p>
+            <label for="name">Введите ваше имя:</label>
+            <input type="text" name="name" required placeholder="Иван Иванов">
+        </p>
 
-    <!--Форму размещай тут-->
+        <p>
+            <label for="dateOfBirth">Введите вашу дату рождения:</label>
+            <input type="date" name="dateOfBirth" required placeholder="01.01.2000">
+        </p>
+
+        <p>
+            <label for="email">Введите ваш email:</label>
+            <input type="email" name="email"  placeholder="mail@mail.ru" required>
+        </p>
+
+        <p>
+            <label for="phone">Введите ваш номер телефона:</label>
+            <input type="number" name="phone" required  placeholder="+71234567890">
+        </p>
+
+        <p>
+            <label for="petType">Выберите вид питомца:</label>
+            <select id="petType" name="petType" required>
+                <option value="cat">Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </p>
+        
+        <p>
+            <label for="gender">Выберите пол питомца:</label>
+            <select id="gender" name="gender" required>
+                <option value="boy">Мужской</option>
+                <option value="girl">Женский</option>
+                <option value="none">Не определился</option>
+            </select>
+        </p>
+        
+        <p>
+            <label for="eyeColor">Выберите цвет глаз:</label>
+            <input type="color" name="eyeColor" required>
+        </p>
+
+        <p>
+            <label for="tailLength">Введите длину хвоста:</label>
+            <input type="number" name="tailLength" max="120" min="7" placeholder="От 7 см до 120 см">
+        </p>
+        
+        <p>
+            <label for="rules">Я согласен на обработку данных</label>
+            <input type="checkbox" name="rules" value = "true" required>
+        </p>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить форму</button>
+    </form>
 
 </main>
 </body>
