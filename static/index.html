@@ -8,8 +8,57 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+<form action="/pets/orders" method="post" class="myForm">
+        <label>
+            Выберите тип животного:
+            <select name="petType" id="" class="select">
+                <option value="cat" selected>Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        </label>
+        <label>
+            Выберите пол:
+            <select name="gender" id="" class="select">
+                <option value="boy" selected>Мальчик</option>
+                <option value="girl">Девочка</option>
+                <option value="other">Другое</option>
+            </select>
+        </label>
+        <label>
+            Выберите цвет глаз:
+            <input type="color" name="eyeColor" class="selectColor">
+        </label>
+        <label>
+            Введите длину хвоста:
+            <input type="number" name="tailLength" placeholder="Введите длину хвоста">
+        </label>
+        <label>
+            Введите имя питомца:
+            <input type="text" name="name" placeholder="Введите имя питомца">
+        </label>
+        <label>
+            Введите вашу дату рождения:
+            <input type="date" name="dateOfBirth">
+        </label>
+        <label>
+            Введите адрес электронной почты:
+            <input type="email" name="email" placeholder="Введите email">
+        </label>
+        <label>
+            Введите номер телефона:
+            <input type="tel" name="phone" placeholder="+7">
+        </label>
 
-    <!--Форму размещай тут-->
+        <button type="reset" class="resetButton">Cтереть входные данные </button>
+
+        <label>
+            Я согласен с условиями
+        <input checked selected type="checkbox" name="rules" value="true" class="rules">
+        </label>
+
+        <button type="submit" class="submitButton">Отправить</button>
+    </form>
 
 </main>
 </body>
